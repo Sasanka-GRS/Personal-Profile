@@ -62,7 +62,7 @@ section .title::before{
     height: 3px;
     background: #111;
     transform: translateX(-50%);
-}
+} /* Lines left and right of who I am */
 section .title::after{
     position: absolute;
     bottom: -8px;
@@ -72,7 +72,7 @@ section .title::after{
     padding: 0 5px;
     background: #fff;
     transform: translateX(-50%);
-}
+}/* Who I am */
 
 .navbar{
     position: fixed;
@@ -81,11 +81,11 @@ section .title::after{
     padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
-}
+}/* Navbar */
 .navbar.sticky{
     padding: 15px 0;
     background: crimson;
-}
+}/* Moved Navbar */
 .navbar .max-width{
     display: flex;
     align-items: center;
@@ -95,14 +95,14 @@ section .title::after{
     color: #fff;
     font-size: 35px;
     font-weight: 600;
-}
+}/* Perso Portfo */
 .navbar .logo a span{
     color: crimson;
     transition: all 0.3s ease;
-}
+}/* nal lio */
 .navbar.sticky .logo a span{
     color: #fff;
-}
+}/* nal lio when moved */
 .navbar .menu li{
     list-style: none;
     display: inline-block;
@@ -114,13 +114,13 @@ section .title::after{
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
-}
+}/* navbar Elements */
 .navbar .menu li a:hover{
     color: crimson;
-}
+}/* navbar Elements hover*/
 .navbar.sticky .menu li a:hover{
     color: #fff;
-}
+}/* Moved Navbar Hover */
 
 .menu-btn{
     color: #fff;
@@ -146,7 +146,7 @@ section .title::after{
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease;
-}
+}/* Scroll up Button */
 .scroll-up-btn.show{
     bottom: 30px;
     opacity: 1;
@@ -154,13 +154,13 @@ section .title::after{
 }
 .scroll-up-btn:hover{
     filter: brightness(90%);
-}
+}/* Reduce brightness to 90% when hovered */
 
 .home{
     display: flex;
     background:  url(s1.gif) no-repeat center center fixed; 
     height: 100vh;
-    color: #fff;
+    color: #fff; /* Color of Name, and moving text in first page*/
     min-height: 500px;
     background-size: cover;
     background-attachment: fixed;
@@ -188,7 +188,7 @@ section .title::after{
 .home .home-content .text-3 span{
     color: crimson;
     font-weight: 500;
-}
+}/* Self-typing text */
 .home .home-content a{
     display: inline-block;
     background: crimson;
@@ -208,7 +208,7 @@ section .title::after{
 
 .about .title::after{
     content: "who I am";
-}
+}/* Text to be Entered */
 .about .about-content .left{
     width: 45%;
 }
@@ -228,7 +228,7 @@ section .title::after{
 }
 .about .about-content .right .text span{
     color: crimson;
-}
+}/* Moving text in about section */
 .about .about-content .right p{
     text-align: justify;
 }
@@ -252,16 +252,16 @@ section .title::after{
 .services, .teams{
     color:#fff;
     background: #111;
-}
+}/* My projects */
 .services .title::before,
 .teams .title::before{
     background: #fff;
-}
+}/* lines left and right of my works */
 .services .title::after,
 .teams .title::after{
     background: #111;
     content: "my works";
-}
+}/* text to be written */
 .services .serv-content .card{
     width: calc(33% - 20px);
     background: #222;
@@ -270,34 +270,34 @@ section .title::after{
     padding: 35px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
-}
+}/* boxes for projects backgrounds */
 .services .serv-content .card:hover{
     background: crimson;
-}
+}/* color of boxes on hover */
 .services .serv-content .card .box{
     transition: all 0.3s ease;
-}
+}/* time for box to enlarge */
 .services .serv-content .card:hover .box{
     transform: scale(1.05);
-}
+}/* how much should box enlarge */
 .services .serv-content .card i{
     font-size: 50px;
     color: crimson;
     transition: color 0.3s ease;
-}
+}/* symbols inside box colors */
 .services .serv-content .card:hover i{
     color: #fff;
-}
+}/* symbols inside box colors on hover */
 .services .serv-content .card .text{
     font-size: 25px;
     color: #fff;
     font-weight: 500;
     margin: 10px 0 7px 0;
-}
+}/* heading text color inside box */
 
 .skills .title::after{
     content: "what I know";
-}
+}/* text to be entered */
 .skills .skills-content .column{
     width: calc(50% - 30px);
 }
@@ -341,7 +341,7 @@ section .title::after{
 .skills .skills-content .right .line{
     height: 5px;
     width: 100%;
-    background: lightgrey;
+    background: #fff;
     position: relative;
 }
 .skills .skills-content .right .line::before{
@@ -351,7 +351,7 @@ section .title::after{
     left: 0;
     top: 0;
     background: crimson;
-}
+}/* lines under skills */
 .skills-content .right .MATLAB::before{
     width: 100%;
 }
@@ -369,19 +369,19 @@ section .title::after{
 }
 .skills-content .right .ngspice::before{
     width: 100%;
-}
+}/* % of knowledge */
 
 .contact{
     color:#fff;
     background: #111;
-}
+}/* background and matter colors for contact */
 .contact .title::before{
     background: #fff;
-}
+}/* color of lines next to get in touch */
 .contact .title::after{
     background: #111;
     content: "get in touch";
-}
+}/* text to be typed and its color */
 .contact .contact-content .column{
     width: calc(50% - 30px);
 }
@@ -407,14 +407,14 @@ section .title::after{
 .contact .contact-content .row i{
     font-size: 25px;
     color: crimson;
-}
+}/* name address email icon colors */
 .contact .contact-content .info .head{
     font-weight: 500;
 }
 .contact .contact-content .info .sub-title{
     color: #555;
-}
-
+}/* Name address emain matter */
+/* adding images -> */
 @media (max-width: 1104px) {
     .about .about-content .left img{
         height: 350px;
